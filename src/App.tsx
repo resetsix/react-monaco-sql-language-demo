@@ -1,15 +1,7 @@
-import { Editor } from "@monaco-editor/react";
-import "./App.css";
+import Editor from "@monaco-editor/react";
 
-// 
 function App() {
-    const value = "select * from user";
-
-    return (
-        <div className="App">
-            <Editor width={800} height={800} value={value} language="mysql" theme="vs-dark" />
-        </div>
-    );
+    return <Editor height="500px" language="mysql" />;
 }
 
 export default App;
